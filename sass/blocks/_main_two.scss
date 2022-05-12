@@ -1,0 +1,168 @@
+.main-two-item {
+  overflow-x: hidden;
+  background-color: #012F34;
+  padding: 140px 0 80px;
+}
+
+.main-two-item--inner {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-item--logo {
+  width: 100%;
+  max-width: 445px;
+}
+
+.main-item--in-span {
+  display: block;
+  width: 50px;
+  height: 4px;
+  margin-bottom: 54px;
+  background-color: #F67E7E;
+}
+
+.main-item__in {
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.main-item-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  @include header_logo 
+}
+
+.main-item-inner::before {
+  display: block; 
+  position: absolute;
+  top: calc(360px);
+  left: calc(665px) ;
+  width: 165px;
+  height: 200px;
+  background-image: url('../images/oval2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.main-item-inner__in {
+  width: 100%;
+  max-width: 555px;
+  display: flex;
+  align-items: center;
+  padding: 50px 16px 16px 16px ;
+}
+
+.main-title {
+  width: 100%;
+  max-width: 445px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.main-title--in {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #F67E7E;
+}
+
+.main-title--go {
+  margin: 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width:985px) {
+  
+  .main-two-item {
+    padding: 100px 0 100px;
+  }
+
+  .main-two-item--inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-item__in {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+}
+
+@media only screen and (max-width:550px) {
+  
+  .main-item--in-span {
+    margin-bottom: 32px;
+  }
+
+  .main-item--logo {
+    position: relative;
+    width: 100%;
+    max-width: 240px;
+    align-items: left;
+  }
+
+  .main-item--logo::before {
+    display: block; 
+    position: absolute;
+    top: calc(-99px);
+    left: calc(228px) ;
+    width: 165px;
+    height: 200px;
+    background-image: url('../images/oval2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+  }
+
+  .main-two-item {
+    padding: 100px 0 64px;
+  }
+
+  .main-item-inner__in {
+    width: 100%;
+    max-width: 555px;
+    display: flex;
+    align-items: center;
+    padding: 48px 0 ;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-title {
+    margin-left: 0px;
+  }
+  
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .main-item-inner::before {
+    background-image: url('../images/oval2@2x.png');
+  }
+
+  .main-item--logo::before {
+    background-image: url('../images/oval2@2x.png');
+  }
+
+} 

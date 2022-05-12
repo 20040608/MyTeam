@@ -1,0 +1,249 @@
+.main-in {
+  overflow-x: hidden;
+  background-color: #014E56;
+}
+
+.main-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 54px 0 250px;
+}
+
+.main-item--in {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  max-width: 600px;
+  font-weight: 700;
+  font-size: 95px;
+  line-height: 100px;
+  color: #FFFFFF;
+}
+
+.main-item--in::before {
+  display: block; 
+  position: absolute;
+  top: calc(-13px);
+  left: calc(-265px) ;
+  width: 200px;
+  height: 200px;
+  background-image: url('../images/oval.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+.main-item--in__inner {
+  font-weight: 700;
+  font-size: 95px;
+  line-height: 100px;
+  color: #F67E7E;
+}
+
+.main-item--go {
+  width: 100%;
+  max-width: 445px;
+}
+
+.main-item--go__inner {
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #FFFFFF;
+  margin-bottom: 79px;
+}
+
+.main-item-text {
+  position: relative;
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.main-item-text::before {
+  display: block; 
+  position: absolute;
+  top: calc(267px);
+  left: calc(69px) ;
+  width: 358px;
+  height: 100px;
+  background-image: url('../images/krug.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+@media only screen and (max-width:984px) {
+  
+  .main-item {
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+  }
+
+  .main-item--in::before {
+    display: none;
+  }
+
+  .main-item--in {
+    width: 100%;
+    font-size: 64px;
+    line-height: 56px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .main-item--in__inner {
+    width: 100%;
+    font-size: 64px;
+    line-height: 56px;
+  }
+
+  .main-item--go__inner {
+    display: none;
+  }
+
+  .main-item-text {
+    width: 100%;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .main-item-text::before {
+    top: calc(234px);
+    left: calc(67px) ;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  
+  .main-item {
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+  }
+
+  .main-item--in::before {
+    display: none;
+  }
+
+  .main-item--in {
+    width: 100%;
+    font-size: 64px;
+    line-height: 56px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .main-item--in__inner {
+    width: 100%;
+    font-size: 64px;
+    line-height: 56px;
+  }
+
+  .main-item--go__inner {
+    display: none;
+  }
+
+  .main-item-text {
+    width: 100%;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .main-item-text::before {
+    top: calc(234px);
+    left: calc(67px) ;
+  }
+}
+
+@media only screen and (max-width:769px) {
+  
+  .main-item--in {
+    font-size: 64px;
+    line-height: 56px;
+  }
+  
+  .main-item--in__inner {
+    font-size: 64px;
+    line-height: 56px;
+  }
+  
+  .main-item-text {
+    font-size: 15px;
+     line-height: 28px;
+  }
+
+  .main-item-text::before {
+    top: calc(234px);
+    left: calc(50px);
+  }
+      
+}
+
+
+  @media only screen and (max-width:450px) {
+  
+  .main-item--in {
+    font-size: 64px;
+    line-height: 56px;
+  }
+  
+  .main-item--in__inner {
+    font-size: 64px;
+    line-height: 56px;
+  }
+  
+  .main-item-text {
+    font-size: 15px;
+     line-height: 28px;
+  }
+  
+  .main-item-text::before {
+    top: calc(262px);
+    left: calc(28px);
+  }
+      
+}
+
+@media only screen and (max-width:445px) {
+  
+  .main-item-text::before {
+    top: calc(262px);
+    left: calc(25px) ;
+  }
+  
+}
+
+@media only screen and (max-width:404px) {
+  
+  .main-item {
+    padding: 54px 0 270px;
+  }
+
+  .main-item-text::before {
+    top: calc(282px);
+    left: calc(-7px) ;
+  }
+  
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .main-item--in::before {
+    background-image: url('../images/oval@2x.png');
+  }
+
+  .main-item-text::before {
+    background-image: url('../images/krug@2x.png');
+  }
+
+  
+} 
