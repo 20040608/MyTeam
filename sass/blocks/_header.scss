@@ -3,30 +3,28 @@
 }
 
 .hero-item__in {
-  padding: 77px 0;
+  padding: 77px 0 30px;
   display: flex;
   align-items: center;
 }
 
-.hero-logo {
+.hero-nav {
+  display: block;
+  width: 100%;
+}
+
+.hero-logo  {
   display: flex;
   @include header_logo 
 }
 
 .hero-logo__in {
-  margin-left: 40px;
-}
-
-.hero-item__in :last-child   {
-  flex-grow: 1;
+  margin-left: 20px;
 }
 
 .hero-logo__in__go {
   display: block;
-}
-
-.hero-logo__in__go :last-child   {
-  flex-grow: 1;
+  margin-left: auto;
 }
 
 .hero-logo__go {
@@ -42,7 +40,6 @@
 }
 
 .hero-link {
-  margin-left: 600px;
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
@@ -69,8 +66,6 @@
   border: none;
 }
 
-
-
 .hero--item-on {
   border: none ;
   background:transparent;
@@ -89,7 +84,6 @@ label .span__logo {
   height:5px;
   margin: 5px 0;
   transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  
 }
 
 
@@ -135,36 +129,7 @@ input[type="checkbox"]:checked ~ .span__logo:nth-of-type(3){
   
 }
 
-
-
-
-@media only screen and (max-width:1135px) {
-  
-  .hero-link {
-    margin-left: 440px;
-  }
-}
-
-@media only screen and (max-width:974px) {
-  
-  .hero-link {
-    margin-left: 300px;
-  }
-  
-  .hero-logo__in {
-    margin-left: 35px;
-  }
-}
-
 @media only screen and (max-width:834px) {
-  
-  .hero-link {
-    margin-left: 180px;
-  }
-  
-  .hero-logo__in {
-    margin-left: 35px;
-  }
   
   .hero-link {
     font-size: 18px;
@@ -173,27 +138,6 @@ input[type="checkbox"]:checked ~ .span__logo:nth-of-type(3){
   
 }
 
-@media only screen and (max-width:724px) {
-  
-  .hero-link {
-    margin-left: 100px;
-  }
-  
-  .hero-logo__in {
-    margin-left: 25px;
-  }
-}
-
-@media only screen and (max-width:634px) {
-  
-  .hero-link {
-    margin-left: 50px;
-  }
-  
-  .hero-logo__in {
-    margin-left: 15px;
-  }
-}
 
 @media only screen and (max-width:534px) {
   
@@ -214,14 +158,5 @@ input[type="checkbox"]:checked ~ .span__logo:nth-of-type(3){
     display: block;
   }
   
-  .hero--item-on {
-    margin-left: 230px;
-  }
 }
 
-@media only screen and (max-width:466px) {
-  
-  .hero--item-on {
-    margin-left: 180px;
-  }
-}

@@ -1,0 +1,61 @@
+.two-three_main {
+  background-color: #012F34;
+  padding: 140px 0 150px;
+}
+
+.three--item {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.main__three-in {
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.picture {
+  background-color: transparent;
+}
+
+.box__inner--title-pic {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box__inner--title-pic::before {
+  display: block; 
+  position: absolute;
+  top: calc(-189px);
+  left: calc(-190px);
+  width: 200px;
+  height: 200px;
+  background-image: url('../../images/oval7.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.main_pic {
+  background-color: transparent;
+}
+
+@media only screen and (max-width:960px) {
+  
+  .box__inner--title-pic { 
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .picture {
+    padding: 10px;
+  }
+
+  .box__inner--title-pic::before {
+    left: calc(-180px);
+  }
+}

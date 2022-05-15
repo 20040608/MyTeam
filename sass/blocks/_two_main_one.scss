@@ -1,0 +1,122 @@
+
+.main-in__inner {
+  overflow-x: hidden;
+  background-color: #014E56;
+}
+
+.main-in-item {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 120px 0 120px;
+}
+
+.main-in-item::before {
+  display: block; 
+  position: absolute;
+  top: 224px;
+  left: 1157px;
+  width: 200px;
+  height: 200px;
+  background-image: url('../../images/oval5.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.main-in-item--in {
+  margin: 0;
+  width: 100%;
+  max-width: 600px;
+  font-weight: 700;
+  font-size: 95px;
+  line-height: 100px;
+  color: #FFFFFF;
+}
+
+.main-in-item--go {
+  width: 100%;
+  max-width: 760px;
+}
+
+.main-in-item--go__inner {
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #F67E7E;
+  margin-bottom: 40px;
+}
+
+.main-in-item-text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+
+@media only screen and (max-width:768px) {
+  
+  .main-in-item {
+    display: flex;
+    flex-direction: column;
+    padding: 130px 0 120px;
+    align-items: center;
+  }
+  
+  .main-in-item--go__inner {
+    display: none;
+  }
+  
+  .main-in-item--go {
+    width: 100%;
+    max-width: 457px;
+  }
+  
+  .main-in-item--in {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  
+  .main-in-item-text {
+    text-align: center;
+  }
+  
+  .main-in-item--go::before {
+    top: 428px;
+    left: 250px;
+  }
+
+  .main-in-item::before {
+    top: 340px;
+    left: 610px;
+  }
+
+}
+
+@media only screen and (max-width:534px) {
+  
+  .main-in-item {
+    padding: 155px 0 155px;
+  }
+  
+  .main-in-item--go::before {
+    top: 10px;
+    left: 40px;
+  }
+
+  
+  
+}
+
+@media only screen and (max-width:372px) {
+  
+  .main-in-item::before {
+    top: 558px;
+    left: 160px;
+  }
+  
+}
+

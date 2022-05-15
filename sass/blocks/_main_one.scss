@@ -74,6 +74,26 @@
   content: '';
 }
 
+@media only screen and (max-width:1015px) {
+  
+  .main-item--in { 
+    width: 100%;
+    font-size: 75px;
+    line-height: 66px;
+  }
+
+  .main-item--in__inner {
+    width: 100%;
+    font-size: 75px;
+    line-height: 66px;
+  }
+
+  
+}
+
+
+
+
 @media only screen and (max-width:984px) {
   
   .main-item {
